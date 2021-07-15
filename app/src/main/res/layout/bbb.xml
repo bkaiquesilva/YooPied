@@ -1,0 +1,186 @@
+<?xml version="1.1" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tema"
+    android:layout_height="match_parent"
+    tools:context="com.edebelzaakso.yoopied.BBB">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_above="@+id/ab"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:padding="2dp"
+        android:background="@color/branco"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#e6e6e6"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/rer"
+            android:id="@+id/relativo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/memeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:onClick="gad" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="64dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="64dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:id="@+id/rer"
+            android:layout_centerInParent="true"
+            android:layout_height="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rer"
+            android:id="@+id/relaty"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/memeImag"
+            android:layout_width="match_parent"
+            android:onClick="tre"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="64dp"
+                android:visibility="gone"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="64dp"
+                android:visibility="gone"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:onClick="top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/memeTopText"
+            android:textSize="27dp"
+            android:textColor="#ff5100" />
+
+        <TextView
+            android:id="@+id/memeBottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ff5100"
+            android:textSize="27dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:id="@+id/ab"
+        android:minHeight="?actionBarSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="retote"
+            android:src="@drawable/ic_volte"
+            android:background="@drawable/ques"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="aemo"
+            android:src="@drawable/ic_insert_emoticon"
+            android:background="@drawable/ques"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="anovo"
+            android:src="@drawable/ic_novoo"
+            android:background="@drawable/ques"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="atexto"
+            android:src="@drawable/ic_text"
+            android:background="@drawable/ques"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="1dp"
+            android:onClick="salve"
+            android:src="@drawable/salvar"
+            android:background="@drawable/ques"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

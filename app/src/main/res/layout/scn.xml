@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tema"
+    tools:context="com.edebelzaakso.yoopied.SCN"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/app_name"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:id="@+id/pesquisa"
+            android:minHeight="?actionBarSize"
+            android:textStyle="bold"
+            android:background="@drawable/ques"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/roxoa"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pesquisa"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom">
+
+        <LinearLayout
+            android:id="@+id/linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/video_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ques"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/tit"
+                            android:text="{E}DEBELZAAK S.O"
+                            android:textColor="@color/roxoa"
+                            android:textAppearance="@android:style/TextAppearance.Medium"
+                            android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/inform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:text="Na {e}debelzaak s.o, acreditamos que é possível evoluir sem causar grandes danos a natureza, não por em risco a saúde dos seres vivos ao criar tecnologias e fazer ciência sem pensar no lucro.\n\nA {e}debelzaak s.o foi fundada em 316 N.E(Nosso calendário). Só viemos a existir para combater a desinformação, criar tecnologias, desenvolver pesquisas na área científica, recuperar dados sobre a história humana, desenvolver softwares e trabalhar com a possibilidade de haver vida fora do nosso planeta. Pertencente a Kaíque Silva de Águas Formosas, MG - Brasil."
+                        android:textColor="@color/roxoa" />
+
+                </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/branco"
+                android:layout_height="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tema"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/mais"
+            android:layout_height="wrap_content"
+            android:text="{E}D.S.O"
+            android:background="@drawable/ques"
+            android:layout_weight="1"
+            android:textColor="@color/roxoa"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:id="@+id/progr"
+            android:theme="@style/AppTheme.WhiteAccent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/splash_next_imagebutton"
+            android:layout_height="wrap_content"
+            android:text="INICIAR"
+            android:background="@drawable/ques"
+            android:layout_weight="1"
+            android:textColor="@color/roxoa"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

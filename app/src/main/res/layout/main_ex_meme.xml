@@ -1,0 +1,123 @@
+<?xml version="1.1" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tema"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.edebelzaakso.yoopied.MainExMeme">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_margin="3dp"
+        android:layout_above="@+id/rvConstraintTools"
+        android:background="@color/branco"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ja.burhanrashid52.photoeditor.PhotoEditorView
+            android:id="@+id/photoEditorView"
+            android:layout_centerInParent="true"
+            app:photo_src="@drawable/brancos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFilterView"
+            android:visibility="gone"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tool_bg"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:layout_above="@id/kmo"
+            tools:listitem="@layout/row_filter_view" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/kmo"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:padding="8dp"
+        android:src="@drawable/ic_close" />
+
+        <ImageView
+            android:id="@+id/imgUndo"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:padding="8dp"
+            android:src="@drawable/ic_undo" />
+
+        <ImageView
+            android:id="@+id/imgRedo"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:padding="8dp"
+            android:src="@drawable/ic_redo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_gallery" />
+
+        <ImageView
+            android:id="@+id/imgGallery"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:padding="8dp"
+            android:src="@drawable/ic_gallery" />
+
+        <ImageView
+            android:id="@+id/imgCamera"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:padding="8dp"
+            android:src="@drawable/ic_camera" />
+
+    <ImageView
+        android:id="@+id/imgSave"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:padding="8dp"
+        android:src="@drawable/ic_save" />
+
+</LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvConstraintTools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        tools:listitem="@layout/row_editing_tools" />
+
+</RelativeLayout>

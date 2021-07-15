@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="branco">#ffffff</color>
+    <color name="preto">#A363DA</color>
+    <color name="azula">#A363DA</color>
+    <color name="roxoa">#A363DA</color>
+    <color name="roxy">#A363DA</color>
+    <color name="laranja">#ff5100</color>
+    <color name="tool_bg">#151414</color>
+</resources>

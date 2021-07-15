@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/add_text_edit_text"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_text_done_tv"
+        android:background="@null"
+        android:textColor="@color/roxoa"
+        android:hint="..."
+        android:textColorHint="@color/roxoa"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/add_text_done_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/borda_roxxo"
+        android:padding="10dp"
+        android:text="ADICIONAR"
+        android:textStyle="bold"
+        android:layout_above="@id/corTexto"
+        android:textColor="@color/branco"
+        android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/roxoa"
+            android:text="COR DO TEXTO"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/corTexto"
+            android:textSize="15sp"
+            android:textColor="@color/branco"
+            android:layout_height="50dp" />
+    
+</RelativeLayout>

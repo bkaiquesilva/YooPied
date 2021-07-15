@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+    <include
+        layout="@layout/emoji"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/tema"
+        android:padding="8dp"
+        android:id="@+id/navigation_lay"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <GridView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:columnWidth="90dp"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:id="@+id/GridView1">
+        </GridView>
+
+        <GridView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:columnWidth="90dp"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:id="@+id/GridView2">
+        </GridView>
+
+        <GridView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:columnWidth="90dp"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:id="@+id/GridView3">
+        </GridView>
+
+        <GridView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:columnWidth="90dp"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:id="@+id/GridView4">
+        </GridView>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
