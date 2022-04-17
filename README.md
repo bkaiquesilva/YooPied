@@ -1,2 +1,2 @@
 # YooPied
-![Screenshot](unnamed.png)
+![Screenshot](unnamed.jpg)
